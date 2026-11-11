@@ -15,7 +15,7 @@
 
 Author: Jugurtha Kacimi
 
-Date: 2026 October
+Date: 2026 November
 
 Fourth project in the Web Mining and Applied NLP course.
 
