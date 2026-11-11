@@ -13,7 +13,7 @@
 
 ## Project Overview
 
-Author: Denise Case
+Author: Jugurtha Kacimi
 
 Date: 2026 October
 
@@ -36,7 +36,7 @@ The project is configured in
 ## Data
 
 The example retrieves JSON records from
-[JSONPlaceholder](https://jsonplaceholder.typicode.com/posts),
+[JSONPlaceholder](https://jsonplaceholder.typicode.com/comments),
 a public demonstration API.
 
 Each record includes fields such as:
@@ -129,7 +129,7 @@ uv run python -m pytest
 
 ## Project Documentation
 
-The [hosted documentation site](https://denisecase.github.io/nlp-04-api-text-data/)
+The [hosted documentation site](https://jugurthakacimi.github.io/nlp-04-api-text-data/)
 is published using Zensical and GitHub Pages.
 
 The documentation site is used to present the project report,
@@ -143,8 +143,8 @@ to check project files and publish the docs.
 
 GitHub Actions include:
 
-- [CI: Python and Documentation Checks](https://github.com/denisecase/nlp-04-api-text-data/actions/workflows/ci-python-zensical.yml)
-- [CD: Documentation Deployment](https://github.com/denisecase/nlp-04-api-text-data/actions/workflows/deploy-zensical.yml)
+- [CI: Python and Documentation Checks](https://github.com/jugurthakacimi/nlp-04-api-text-data/actions/workflows/ci-python-zensical.yml)
+- [CD: Documentation Deployment](https://github.com/jugurthakacimi/nlp-04-api-text-data/actions/workflows/deploy-zensical.yml)
 
 ## Developer Reference
 
@@ -229,7 +229,7 @@ testing, documentation, and code quality.
 
 ## Links
 
-- [Hosted Documentation](https://denisecase.github.io/nlp-04-api-text-data/)
+- [Hosted Documentation](https://jugurthakacimi.github.io/nlp-04-api-text-data/)
 - [Professional Python Workflow Guide](https://denisecase.github.io/pro-analytics-02/)
 - [Citation](CITATION.cff)
 - [License](LICENSE)
