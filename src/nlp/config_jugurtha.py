@@ -1,0 +1,53 @@
+"""config.py.
+
+Author: Jugurtha Kacimi
+
+Date: 2026-11
+
+(EDIT YOUR VERSION OF THIS FILE)
+
+Purpose
+
+  Store configuration values for the EVTL pipeline.
+
+Analytical Questions
+
+- What API endpoint should be used as the data source?
+- What HTTP request headers are required?
+- Where should raw and processed data be stored?
+
+Edit your Python file to change:
+- API URL (source of the JSON data),
+- the HTTP Request Headers (to show your app name in the user-agent header)
+- customize your output file name.
+"""
+
+from pathlib import Path
+
+# ============================================================
+# API CONFIGURATION
+# ============================================================
+
+# TODO: In your custom app, change the URL to work with a different API that returns JSON data.
+API_URL: str = "https://jsonplaceholder.typicode.com/comments"
+
+# TODO: In your custom app, change the header user-agent value
+# to something that represents your app or project.
+HTTP_REQUEST_HEADERS: dict[str, str] = {
+    "User-Agent": "nlp-module-4-jugurtha/1.0",
+    "Accept": "application/json",
+}
+
+# ============================================================
+# PATH CONFIGURATION
+# ============================================================
+
+ROOT_PATH: Path = Path.cwd()
+DATA_PATH: Path = ROOT_PATH / "data"
+RAW_PATH: Path = DATA_PATH / "raw"
+PROCESSED_PATH: Path = DATA_PATH / "processed"
+
+# TODO: In your custom app, change the output file names from jugurtha_
+# to something that represents YOUR custom project.
+RAW_JSON_PATH: Path = RAW_PATH / "jugurtha_raw.json"
+PROCESSED_CSV_PATH: Path = PROCESSED_PATH / "jugurtha_processed.csv"
