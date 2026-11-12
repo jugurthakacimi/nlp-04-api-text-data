@@ -72,6 +72,11 @@ def run_transform(
         [
             pl.col("name").str.len_chars().alias("name_length"),
             pl.col("body").str.len_chars().alias("body_length"),
+            pl.col("body")
+            .str.to_lowercase()
+            .str.extract_all(r"\b\w+\b")
+            .list.len()
+            .alias("body_word_count"),
         ]
     )
 
